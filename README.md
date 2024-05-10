@@ -1,0 +1,1 @@
+This project demonstrates a soloution to the CartPole-v1 problem of the gymnasium library. You can see the information about this problem [here](https://gymnasium.farama.org/environments/classic_control/cart_pole/).
