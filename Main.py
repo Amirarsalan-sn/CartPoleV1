@@ -855,30 +855,18 @@ class ModelTrainTest():
 
 
 if __name__ == '__main__':
-    """epsilons = [0.999]
-    for i in range(900):
-        epsilons.append(epsilons[i] * 0.997)
-
-    epsilons2 = [0.999]
-    for i in range(9000):
-        epsilons2.append(epsilons2[i] * 0.9997)
-    plt.figure()
-    plt.title("Epsilon Deduction")
-    plt.plot(epsilons, label='DQN', color='green', alpha=1)
-    plt.plot(epsilons2, label='SARSA', color='red')
-    plt.xlabel('Episodes')
-    plt.ylabel('Value')
-    plt.grid(True)
-    plt.legend()
-    plt.show()
-    exit(0)"""
+    """
+    DQN epsilon-greedy -> 1475.94 : Pure rewards from one episode.
+    DQN boltzmann -> 1362.23
+    SARSA epsilon-greedy -> 1484.33
+    """
     # Parameters:
     train_mode = False
     render = not train_mode
     RL_hyperparams = {
         "train_mode": train_mode,
-        "RL_load_path": './sarsa_epsilon/final_weights' + '_' + '9000' + '.pth',
-        "save_path": './sarsa_epsilon/final_weights',
+        "RL_load_path": './dqn_epsilon/final_weights' + '_' + '900' + '.pth',
+        "save_path": './dqn_epsilon/final_weights',
         "save_interval": 100,
 
         "clip_grad_norm": 5,
@@ -893,11 +881,11 @@ if __name__ == '__main__':
         "epsilon_max": 0.999 if train_mode else -1,
         "epsilon_min": 0.01,
         "temp_min": 0.1,
-        "temp": 15,
+        "temp": 15 if train_mode else 0.1,
         "temp_decay": 0.994,
         "epsilon_or_boltzmann": True,
         "epsilon_decay": 0.997,
-        "dqn_or_sarsa": False,
+        "dqn_or_sarsa": True,
         "memory_capacity": 125_000 if train_mode else 0,
 
         "render_fps": 60,
