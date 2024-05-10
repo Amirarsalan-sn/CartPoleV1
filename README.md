@@ -79,21 +79,27 @@ I've trained the model for DQN algorithm with both e-greedy and Boltzmann polici
 ## DQN Epsilon-greedy
 Steps played: 500 (maximum steps, which means the agent kept the pole in a steady state for 500 steps and finished the game successfully.)
 Raw rewared gained: 1475.94
-[Agent's reward chart](/images/dqn_epsilon_reward.jpg)
-[Agent's loss chart](/images/dqn_epsilon_loss.jpg)
-[Agent's game play](/images/dqn_epsilon.gif)
+
+
+![Agent's reward chart](/images/dqn_epsilon_reward.jpg)
+![Agent's loss chart](/images/dqn_epsilon_loss.jpg)
+![Agent's game play](/images/dqn_epsilon.gif)
 ## DQN Boltzmann
 Steps played: 500 (maximum steps, which means the agent kept the pole in a steady state for 500 steps and finished the game successfully.)
 Raw rewared gained: 1362.23
-[Agent's reward chart](/images/dqn_boltzmann_reward.jpg)
-[Agent's loss chart](/images/dqn_boltzmann_loss.jpg)
-[Agent's game play](/images/dqn_boltzmann.gif)
+
+
+![Agent's reward chart](/images/dqn_boltzmann_reward.jpg)
+![Agent's loss chart](/images/dqn_boltzmann_loss.jpg)
+![Agent's game play](/images/dqn_boltzmann.gif)
 ## SARSA Epsilon-greedy
 Steps played: 500 (maximum steps, which means the agent kept the pole in a steady state for 500 steps and finished the game successfully.)
 Raw rewared gained: 1484.33
-[Agent's reward chart](/images/sarsa_reward.jpg)
-[Agent's loss chart](/images/sarsa_loss.jpg)
-[Agent's game play](/images/sarsa.gif)
+
+
+![Agent's reward chart](/images/sarsa_reward.jpg)
+![Agent's loss chart](/images/sarsa_loss.jpg)
+![Agent's game play](/images/sarsa.gif)
 
 ## Thanks to
 Thanks to [Mehdi Shabazi](https://github.com/MehdiShahbazi) who provided us with a base code and guided us how to implement the NN structure and DQN agent.
