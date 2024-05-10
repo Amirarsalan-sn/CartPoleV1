@@ -1,5 +1,5 @@
 # CartPole-v1
-This project demonstrates a soloution to the CartPole-v1 problem of the gymnasium library. You can see the information about this problem [here](https://gymnasium.farama.org/environments/classic_control/cart_pole/).
+This project demonstrates a soloution for the CartPole-v1 problem of the gymnasium library. You can see more information about this problem [here](https://gymnasium.farama.org/environments/classic_control/cart_pole/).
 The problem is solved using SARSA and DQN algorithms based on a neural network structure for state-value function, with two different policies ( epsilon-greedy and Boltzmann ), The algorithms along with their policies and NN structures are completely implemented in the [Main.py](Main.py) file.
 ## Requirements
 This code uses pytorch and gymnasium for training the agent and interacting with the environment, so make sure you install these libraries correctly. Other libraries include:
@@ -37,7 +37,7 @@ Before showing the results of each algorithm lets show a reward wrapper which I'
         return modified_reward
 ```
 ## Epsilon-greedy and Boltzmann policies
-Here, is the implementation for epsilon-greedy and Boltzmann policiec:
+Here, is the implementation for epsilon-greedy and Boltzmann policies:
 ```python
     def select_action(self, state):
         """
@@ -105,4 +105,4 @@ Raw rewared gained: 1484.33
 ![Agent's game play](/images/sarsa.gif)
 
 ## Thanks to
-Thanks to [Mehdi Shabazi](https://github.com/MehdiShahbazi) who provided us with a base code and guided us how to implement the NN structure and DQN agent.
+Thanks to [Mehdi Shabazi](https://github.com/MehdiShahbazi) who provided us with a base code and showed us how to implement the NN structure and DQN agent.
